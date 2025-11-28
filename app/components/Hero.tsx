@@ -1,7 +1,6 @@
 import { customers } from "@/data/customer";
 import { ArrowRightIcon, ClockIcon, GiftIcon, StarIcon, TagIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
-import { isContext } from "vm";
 
 const news = [
     { icon: <TagIcon className="w-6 h-6" />, title: 'Future Threads' },
