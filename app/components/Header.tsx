@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { MagnifyingGlassIcon, ShoppingCartIcon } from "@heroicons/react/16/solid";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import user from "@/data/user";
 
 export function Header() {
   return (
-    <header className="px-8 py-4 flex justify-between items-center">
+    <header className="px-4 md:px-8 py-4 flex justify-between items-center">
       <nav className="hidden md:block">
         <ul className="flex gap-4">
           <li><Link href="/">Shop</Link></li>
@@ -22,7 +23,7 @@ export function Header() {
         <div className="border-2 border-slate-300 w-fit h-10 gap-0.5 rounded-full flex items-center pl-0.5 pr-2 py-0.5">
           <Image
             className="w-8 h-8 object-cover rounded-full"
-            src="/imgs/avatar.jpg"
+            src={user.avatar}
             alt="VYBE Logo"
             width={120}
             height={60}
