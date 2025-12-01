@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import type {Metadata} from "next";
+import {Outfit} from "next/font/google";
 import "@/app/styles/globals.css";
 
 const outfit = Outfit({
@@ -9,22 +9,22 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "VYBE Clothing Store",
-  description: "Your ultimate destination for cutting-edge streetwear fashion.",
+    title: "VYBE Clothing Store",
+    description: "Your ultimate destination for cutting-edge streetwear fashion.",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${outfit.className}`}
-      >
+    return (
+        <html lang="en">
+        <body
+            className={`${outfit.className} bg-red-50`}
+        >
         {children}
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
