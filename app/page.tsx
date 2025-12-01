@@ -4,10 +4,13 @@ import {CommunityHub} from "./components/CommunityHub";
 
 export default function Home() {
     return (
-        <main className="px-4 pb-8 md:px-8">
+        <main>
             <Header/>
-            <Hero/>
-            <CommunityHub/>
+            <div className="px-4 pb-8 md:px-8">
+                <Hero/>
+                <CommunityHub/>
+            </div>
+
         </main>
     );
 }
