@@ -56,29 +56,29 @@ const Cos = () => {
 
 export function Hero() {
     return (
-        <section className="mt-8">
+        <section className="mt-8 animate-[fade-in_700ms_cubic-bezier(0.22,1,0.36,1)_both]">
             <div
                 className="flex flex-row justify-center align-middle -mb-6 gap-4">
                 <div className='w-1/4'></div>
                 <div className="flex w-1/2">
-                    <div className="text-2xl sm:text-5xl">Own the</div>
-                    <div className="text-4xl sm:text-7xl font-extrabold">EDGE</div>
+                    <div className="text-2xl sm:text-5xl animate-[slide-up_700ms_cubic-bezier(0.22,1,0.36,1)_both]">Own the</div>
+                    <div className="text-4xl sm:text-7xl font-extrabold animate-[slide-up_700ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:120ms]">EDGE</div>
                 </div>
                 <div className='w-1/2'></div>
                 <div className="flex pt-8 w-1/2">
-                    <div className="text-2xl sm:text-5xl">Keep the</div>
-                    <div className="text-4xl sm:text-7xl font-extrabold">VIBE</div>
+                    <div className="text-2xl sm:text-5xl animate-[slide-up_700ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:180ms]">Keep the</div>
+                    <div className="text-4xl sm:text-7xl font-extrabold animate-[slide-up_700ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:260ms]">VIBE</div>
                 </div>
                 <div className='w-1/3'></div>
             </div>
             <div className="h-full relative overflow-hidden pt-20">
                 <div
                     className="w-full top-0 left-0 right-0 pt-20  h-full z-10 absolute">
-                    <div className="w-full h-full bg-red-400 rounded-3xl"></div>
+                    <div className="w-full h-full bg-red-400 rounded-3xl animate-[scale-in_700ms_cubic-bezier(0.22,1,0.36,1)_both]"></div>
                 </div>
                 <div className="flex left-0 w-full right-0 justify-center z-10 overflow-hidden top-0 absolute">
                     <Image
-                        className="object-cover w-96 z-10"
+                        className="object-cover w-96 z-10 animate-[float-y_6000ms_ease-in-out_infinite] [animation-delay:400ms]"
                         src="/imgs/persona-hero.png"
                         alt="Hero Image"
                         width={600}
@@ -90,15 +90,15 @@ export function Hero() {
                     <div
                         className="md:w-1/3 flex flex-col">
                         <h1>New arrivals</h1>
-                        <p className="text-3xl font-bold">Where Art meets your style</p>
-                        <p>Step into the future of streetwear today.</p>
-                        <CallActionButton/>
-                        <Cos/>
+                        <p className="text-3xl font-bold animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both]">Where Art meets your style</p>
+                        <p className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:120ms]">Step into the future of streetwear today.</p>
+                        <div className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:220ms]"><CallActionButton/></div>
+                        <div className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:320ms]"><Cos/></div>
                     </div>
                     <div className="md:w-1/3"></div>
                     <div className="md:w-1/3 flex md:flex-col mt-8 gap-8 justify-center items-center">
-                        <CustomerSelect/>
-                        <Offre/>
+                        <div className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:120ms]"><CustomerSelect/></div>
+                        <div className="animate-[scale-in_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:240ms]"><Offre/></div>
                     </div>
                 </div>
             </div>

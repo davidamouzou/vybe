@@ -4,7 +4,7 @@ import {CommunityHub} from "./components/CommunityHub";
 
 export default function Home() {
     return (
-        <main className="px-4 md:px-8">
+        <main className="px-4 pb-8 md:px-8">
             <Header/>
             <Hero/>
             <CommunityHub/>

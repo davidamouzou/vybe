@@ -1,10 +1,10 @@
 import type {Metadata} from "next";
-import {Outfit} from "next/font/google";
+import {Signika} from "next/font/google";
 import "@/app/styles/globals.css";
 
-const outfit = Outfit({
+const outfit = Signika({
     subsets: ['latin'],
-    weight: ['400', '500', '600', '700', '800', '900'],
+    weight: ['400', '500', '600', '700'],
     variable: '--font-outfit',
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body
-            className={`${outfit.className} bg-red-50`}
+            className={`${outfit.className} bg-red-50 animate-[fade-in_700ms_cubic-bezier(0.22,1,0.36,1)_both]`}
         >
         {children}
         </body>
