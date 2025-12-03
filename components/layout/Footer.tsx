@@ -41,10 +41,10 @@ export function Footer() {
                         <h3 className="text-sm font-semibold mb-3">Navigation</h3>
                         <ul className="space-y-2 text-sm text-gray-800">
                             <li><Link className="hover:text-red-500" href="/">Home</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Shop</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Collections</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">About</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Contact</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Shop</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Collections</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">About</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -52,11 +52,11 @@ export function Footer() {
                     <div>
                         <h3 className="text-sm font-semibold mb-3">Customer Support</h3>
                         <ul className="space-y-2 text-sm text-gray-800">
-                            <li><Link className="hover:text-red-500" href="/public">FAQs</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Shipping & Returns</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Size Guide</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Rewards Program</Link></li>
-                            <li><Link className="hover:text-red-500" href="/public">Help Center</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">FAQs</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Shipping & Returns</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Size Guide</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Rewards Program</Link></li>
+                            <li><Link className="hover:text-red-500" href="/">Help Center</Link></li>
                         </ul>
                     </div>
 
@@ -74,7 +74,8 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-600">
+                <div
+                    className="mt-8 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-gray-600">
                     <p>© {new Date().getFullYear()} VYBE. All rights reserved.</p>
                     <div className="flex items-center gap-4">
                         <Link className="hover:text-red-500" href="#">Privacy</Link>
