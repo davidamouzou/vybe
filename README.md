@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vybe
+
+A modern community-driven web app built with Next.js (App Router) and TypeScript. Vybe focuses on connecting users
+through curated content, events, and a vibrant community hub.
+
+![Vybe Mockup 2](public/imgs/maquette.png)
+
+## Features
+
+- Next.js App Router with server and client components
+- Responsive UI with reusable components (Hero, Navbar, CommunityHub, etc.)
+- TypeScript-first codebase
+- PostCSS/Tailwind-ready pipeline (see `postcss.config.mjs`)
+- Optimized assets under `public/`
+
+## Tech Stack
+
+- Next.js 14+
+- React 18
+- TypeScript
+- PostCSS
 
 ## Getting Started
 
-First, run the development server:
+Prerequisites:
+
+- Node.js 18+
+- pnpm (recommended) or npm/yarn/bun
+
+Install dependencies:
 
 ```bash
-npm run dev
+pnpm install
 # or
-yarn dev
-# or
+npm install
+```
+
+Start the development server:
+
+```bash
 pnpm dev
 # or
+npm run dev
+yarn dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+.
+├─ app/                 # App Router pages and layout
+├─ components/          # Shared React components
+├─ public/              # Static assets (served at /)
+│  └─ imgs/
+│     ├─ maq_1.png
+│     └─ maq_2.png
+├─ styles/              # Global styles
+├─ data/                # Local data sources
+└─ package.json         # Scripts and deps
+```
 
-## Learn More
+Key entry points:
 
-To learn more about Next.js, take a look at the following resources:
+- `app/layout.tsx` – root layout
+- `app/page.tsx` – home page
+- `components/` – UI building blocks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev       # Start dev server
+pnpm build     # Build for production
+pnpm start     # Start production server
+pnpm lint      # Lint codebase
+```
 
-## Deploy on Vercel
+## Assets and Images
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- App images live in `public/imgs/` so they are available at runtime under `/imgs/*`.
+- This README embeds the mockups directly from the repository paths:
+    - `./public/imgs/maq_1.png`
+    - `./public/imgs/maq_2.png`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+You can deploy on any platform that supports Node.js. For Vercel:
+
+1. Push this repo to GitHub/GitLab/Bitbucket
+2. Import the project in Vercel
+3. Use the default Next.js build settings
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue to discuss what you would like to change.
+
+## License
+
+This project is proprietary unless a license file is provided. If you intend to open source it, add a license (e.g.,
+MIT) at the project root.
