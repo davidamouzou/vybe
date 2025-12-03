@@ -91,19 +91,19 @@ export function Header() {
             >
                 <ul className="flex flex-col p-4 gap-2 shadow-lg">
                     <li className="transition-all duration-300 hover:bg-white hover:text-red-500 rounded-lg">
-                        <Link href="/public" className="block py-3 px-4"
+                        <Link href="/" className="block py-3 px-4"
                               onClick={() => setIsMobileMenuOpen(false)}>Shop</Link>
                     </li>
                     <li className="transition-all duration-300 hover:bg-white hover:text-red-500 rounded-lg">
-                        <Link href="/public" className="block py-3 px-4"
+                        <Link href="/" className="block py-3 px-4"
                               onClick={() => setIsMobileMenuOpen(false)}>Collections</Link>
                     </li>
                     <li className="transition-all duration-300 hover:bg-white hover:text-red-500 rounded-lg">
-                        <Link href="/public" className="block py-3 px-4"
+                        <Link href="/" className="block py-3 px-4"
                               onClick={() => setIsMobileMenuOpen(false)}>About</Link>
                     </li>
                     <li className="transition-all duration-300 hover:bg-white hover:text-red-500 rounded-lg">
-                        <Link href="/public" className="block py-3 px-4"
+                        <Link href="/" className="block py-3 px-4"
                               onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
                     </li>
                     {/* Mobile User Profile */}
