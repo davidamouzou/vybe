@@ -30,13 +30,13 @@ export function Navbar() {
                 <nav className="hidden md:block">
                     <ul className="flex gap-4">
                         <li className="transition-all duration-300 hover:scale-105 hover:text-red-500"><Link
-                            href="/public">Shop</Link></li>
+                            href="/">Shop</Link></li>
                         <li className="transition-all duration-300 hover:scale-105 hover:text-red-500"><Link
-                            href="/public">Collections</Link></li>
+                            href="/">Collections</Link></li>
                         <li className="transition-all duration-300 hover:scale-105 hover:text-red-500"><Link
-                            href="/public">About</Link></li>
+                            href="/">About</Link></li>
                         <li className="transition-all duration-300 hover:scale-105 hover:text-red-500"><Link
-                            href="/public">Contact</Link></li>
+                            href="/">Contact</Link></li>
                     </ul>
                 </nav>
 
