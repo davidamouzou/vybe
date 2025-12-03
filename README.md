@@ -8,7 +8,7 @@ through curated content, events, and a vibrant community hub.
 ## Features
 
 - Next.js App Router with server and client components
-- Responsive UI with reusable components (Hero, Header, CommunityHub, etc.)
+- Responsive UI with reusable components (Hero, Navbar, CommunityHub, etc.)
 - TypeScript-first codebase
 - PostCSS/Tailwind-ready pipeline (see `postcss.config.mjs`)
 - Optimized assets under `public/`
