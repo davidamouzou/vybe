@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "@/app/components/Button";
+import Button from "@/components/Button";
 import {ClockIcon, GiftIcon} from "@heroicons/react/24/outline";
 
 export function CommunityHub() {

@@ -1,6 +1,6 @@
-import {Header} from "@/app/components/Header";
-import {Hero} from "./components/Hero";
-import {CommunityHub} from "./components/CommunityHub";
+import {Header} from "@/components/Header";
+import {Hero} from "@/components/Hero";
+import {CommunityHub} from "@/components/CommunityHub";
 
 export default function Home() {
     return (

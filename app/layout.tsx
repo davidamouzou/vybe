@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import {Signika} from "next/font/google";
-import "@/app/styles/globals.css";
+import "@/styles/globals.css";
+import React from "react";
 
 const outfit = Signika({
     subsets: ['latin'],

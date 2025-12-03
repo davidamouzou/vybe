@@ -1,7 +1,7 @@
 import {customers} from "@/data/customer";
 import {ArrowRightIcon, ClockIcon, StarIcon, TagIcon} from "@heroicons/react/16/solid";
 import Image from "next/image";
-import {Offre} from "@/app/components/offre";
+import {Offre} from "@/components/offre";
 
 const news = [
     {icon: <TagIcon className="w-6 h-6"/>, title: 'Future Threads'},
