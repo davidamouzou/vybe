@@ -1,12 +1,12 @@
-import {customers} from "@/data/customer";
-import {ArrowRightIcon, ClockIcon, StarIcon, TagIcon} from "@heroicons/react/16/solid";
+import { customers } from "@/data/customer";
+import { ArrowRightIcon, ClockIcon, StarIcon, TagIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
-import {Offre} from "@/components/offre";
+import { Offre } from "@/components/offre";
 
 const news = [
-    {icon: <TagIcon className="w-6 h-6"/>, title: 'Future Threads'},
-    {icon: <StarIcon className="w-6 h-6"/>, title: 'Unique Designs'},
-    {icon: <ClockIcon className="w-6 h-6"/>, title: 'Limited Drops'},
+    { icon: <TagIcon className="w-6 h-6" />, title: 'Future Threads' },
+    { icon: <StarIcon className="w-6 h-6" />, title: 'Unique Designs' },
+    { icon: <ClockIcon className="w-6 h-6" />, title: 'Limited Drops' },
 ]
 
 const CallActionButton = () => {
@@ -15,7 +15,7 @@ const CallActionButton = () => {
         <div>New Drops</div>
         <div
             className="bg-red-400 flex items-center justify-center text-white rounded-full px-4 py-2 transition-transform duration-300 group-hover:animate-[bounce_1000ms_ease-in-out_infinite]">
-            <ArrowRightIcon className="w-4 h-4 inline-block transition-transform duration-300 hover:translate-x-1"/>
+            <ArrowRightIcon className="w-4 h-4 inline-block transition-transform duration-300 hover:translate-x-1" />
         </div>
     </button>)
 }
@@ -25,7 +25,7 @@ const CustomerSelect = () => {
         <div className="flex gap-4 flex-col md:flex-row">
             {news.map((item, index) => (
                 <div key={index}
-                     className="w-20 flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+                    className="w-20 flex flex-col items-center transition-all duration-300 hover:scale-110 hover:-translate-y-1">
                     <div className="transition-transform duration-300 hover:rotate-12">{item.icon}</div>
                     <div className="text-center text-sm">{item.title}</div>
                 </div>
@@ -108,19 +108,19 @@ export function Hero() {
                             into the future of streetwear today.</p>
                         <div
                             className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:220ms]">
-                            <CallActionButton/></div>
+                            <CallActionButton /></div>
                         <div
                             className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:320ms]">
-                            <Cos/></div>
+                            <Cos /></div>
                     </div>
                     <div className="md:w-1/3"></div>
                     <div className="md:w-1/3 flex md:flex-col mt-8 gap-8 justify-center items-center">
                         <div
                             className="animate-[slide-up_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:120ms]">
-                            <CustomerSelect/></div>
+                            <CustomerSelect /></div>
                         <div
                             className="animate-[scale-in_800ms_cubic-bezier(0.22,1,0.36,1)_both] [animation-delay:240ms]">
-                            <Offre/></div>
+                            <Offre /></div>
                     </div>
                 </div>
             </div>
